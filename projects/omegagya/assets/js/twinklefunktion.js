@@ -52,6 +52,29 @@ function square(num, num1) {
 
 square(5,6);
 
+function greet (person1, person2, person3, person4){
+    console.log("hej, " + person1 + "!");
+    console.log("hej, " + person2 + "!");
+    console.log("hej, " + person3 + "!");
+    console.log("hej, " + person4 + "!");
+}
+
+greet ("Rickard", "Boris", "Jonis", "Alfred");
+
+
+
+function square(x){
+    return x * x;
+}
+
+console.log ("4 squared is " + squared(4));
+
+//return kan endast returnera ett värde per funktion (det första)
+
+var result = squared(10);
+console.log
+
+
 
 
 
