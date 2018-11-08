@@ -89,3 +89,41 @@ function isEven(x) {
 }
 
 Console.log(isEven(1945));
+
+
+//test 2
+
+function kebabToSnake(str){
+    var MyString = str.replace(/-/g, "_");// replace makes a new copy of that string 
+    return MyString;
+}
+
+
+kebabToSnake("Hej-jag-heter-Rickard");
+
+
+// js scope
+
+function localScope() {
+    var showScope = 31;
+    console.log(showScope);
+}
+
+localScope();
+console.log(showScope);
+
+var showScope = "i'm aglobalvarible"; // global varible === Accesiblein the entire script
+console.log(showScope);
+
+var showScopeY = 99; //Global varible
+function localScopeY() {
+    showScopeY = 100;
+    console.log(showScopeY);
+}
+
+console.log(showScopeY); //Global varible
+localScopeY();
+console.log(showScopeY);
+
+
+
