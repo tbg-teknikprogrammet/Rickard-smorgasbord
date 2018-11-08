@@ -70,12 +70,22 @@ function square(x){
 console.log ("4 squared is " + squared(4));
 
 //return kan endast returnera ett värde per funktion (det första)
+//kan bara returnera ett värde per funktion
 
 var result = squared(10);
 console.log
 
 
 
+//test
 
+function isEven(x) {
+    if(x % 2 === 0) {
+        return true;
+    } 
+    else{
+        return false;
+    }
+}
 
-
+Console.log(isEven(1945));
