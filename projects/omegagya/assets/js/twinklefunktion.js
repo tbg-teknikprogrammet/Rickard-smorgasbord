@@ -112,7 +112,7 @@ function localScope() {
 localScope();
 console.log(showScope);
 
-var showScope = "i'm aglobalvarible"; // global varible === Accesiblein the entire script
+var showScope = "i'm a global varible"; // global varible === Accesiblein the entire script
 console.log(showScope);
 
 var showScopeY = 99; //Global varible
@@ -124,6 +124,40 @@ function localScopeY() {
 console.log(showScopeY); //Global varible
 localScopeY();
 console.log(showScopeY);
+
+function sing() {
+    console.log("im singing in the rain!")
+    console.log("its funny on a sunny day!")
+}
+
+// setInterval(sing, 2500);
+
+// var anon = setInterval(function(){
+//     console.log("im an anonymous function")
+// }, 3000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("output").innerHTML = d.toLocaleTimeString();
+}
+
+myTimer();
+
+var myTime = setInterval(myTimer, 1000);
+
+document.getElementsByTagName("button")[0].addEventListener("mouseenter", function() {
+    clearInterval(myTime);
+});
+
+document.querySelector("button").addEventListener("mouseleave", function() {
+    myTime = setInterval(myTimer, 1000);
+});
+
+
+
+
+
+
 
 
 
