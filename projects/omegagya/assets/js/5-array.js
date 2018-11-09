@@ -1,4 +1,4 @@
-// list agroup of friends
+// list a group of friends
 var friend1 = "Måns"
 var friend2 = "Sten"
 var friend3 = "Claes"
