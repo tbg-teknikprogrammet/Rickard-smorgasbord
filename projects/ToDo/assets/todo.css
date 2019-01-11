@@ -1,4 +1,4 @@
-/* Include the padding and border in an element's total width and height */
+/* Include the padding and border in an element's total width and height
 * {
     box-sizing: border-box;
 }
@@ -113,4 +113,4 @@ input {
 
 .addBtn:hover {
     background-color: rgb(43, 255, 0);
-}
+} 
